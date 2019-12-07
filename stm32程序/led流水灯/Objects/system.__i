@@ -1,0 +1,6 @@
+--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Core -I .\FWlib\inc -I .\user -I .\Public
+-I.\RTE\_Target_1
+-IE:\keil_MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+-IE:\keil_MDK\ARM\CMSIS\Include
+-D__UVISION_VERSION="525" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
+-o .\objects\system.o --omf_browse .\objects\system.crf --depend .\objects\system.d "Public\system.c"
